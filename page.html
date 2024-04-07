@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Penggunaan Dropdown dan Accordion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+    .ui.segment {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dropdown -->
+  <div class="ui segment">
+    <div class="ui selection dropdown">
+      <input type="hidden" name="gender">
+      <i class="dropdown icon"></i>
+      <div class="default text">Pilih Gender</div>
+      <div class="menu">
+        <div class="item" data-value="1">Laki-laki</div>
+        <div class="item" data-value="0">Perempuan</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accordion -->
+  <div class="ui segment">
+    <div class="ui accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        Apa itu Semantic UI?
+      </div>
+      <div class="content">
+        <p>Semantic UI adalah sebuah framework front-end yang menyediakan berbagai komponen dan gaya desain yang siap digunakan untuk membangun tampilan website yang responsif dan menarik.</p>
+      </div>
+      <div class="title">
+        <i class="dropdown icon"></i>
+        Mengapa menggunakan Semantic UI?
+      </div>
+      <div class="content">
+        <p>Salah satu kelebihan Semantic UI adalah kemudahan penggunaannya dan dokumentasi yang lengkap, sehingga memungkinkan pengembang untuk membangun tampilan website dengan cepat dan efisien.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load JavaScript Semantic UI -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+  <!-- Aktivasi dropdown dan accordion -->
+  <script>
+    $(document).ready(function(){
+      $('.ui.dropdown').dropdown();
+      $('.ui.accordion').accordion();
+    });
+  </script>
+
+</body>
+</html>

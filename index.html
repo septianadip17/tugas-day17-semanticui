@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Penggunaan Semantic UI</title>
+  <!-- Load CSS Semantic UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<body>
+
+  <!-- Grid -->
+  <div class="ui container">
+    <div class="ui grid">
+      <div class="four wide column">
+        <div class="ui segment">Kolom 1</div>
+      </div>
+      <div class="twelve wide column">
+        <div class="ui segment">Kolom 2</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Button -->
+  <a href="page.html"><button class="ui primary button">Menuju Ke Halaman Berikutnya</button></a>
+
+  <!-- Form -->
+  <form class="ui form">
+    <div class="field">
+      <label>Nama:</label>
+      <input type="text" name="nama" placeholder="Masukkan nama">
+    </div>
+    <div class="field">
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="Masukkan email">
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+  </form>
+
+  <!-- Menu -->
+  <div class="ui menu">
+    <a class="item">Beranda</a>
+    <a class="item">Tentang</a>
+    <a class="item">Kontak</a>
+  </div>
+
+  <!-- Card -->
+  <div class="ui link cards">
+    <div class="card">
+      <div class="image">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="content">
+        <div class="header">Judul Kartu</div>
+        <div class="description">
+          Deskripsi singkat kartu.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">Judul Modal</div>
+    <div class="content">
+      <p>Isi modal akan ditampilkan di sini.</p>
+    </div>
+    <div class="actions">
+      <div class="ui button">Tutup</div>
+    </div>
+  </div>
+
+  <!-- JavaScript Semantic UI -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+</html>
